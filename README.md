@@ -18,16 +18,14 @@ Run migration:
 Add-Migration InitialCreate
 Update-Database
 ```
-3. Test Identity
-Register 1 user
+### 3. Test Identity
+- Register 1 user
+- Login successfully
 
-Login successfully
-
-4. Create Tables in SSMS
-Create at least 2 tables with relationship (FK)
-
-Example:
-
+### 4. Create Tables in SSMS
+- Create at least 2 tables with relationship (FK)
+- Example:
+```
 Categories
 - Id
 - Name
@@ -37,73 +35,56 @@ Products
 - Name
 - Price
 - CategoryId (FK)
-5. Scaffold Database (IMPORTANT)
+```
+### 5. Scaffold Database (IMPORTANT)
 Run:
-
+```bash
 Scaffold-DbContext "Server=.\SQLEXPRESS;Database=YourDB;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -f
-6. Merge DbContext
-Copy DbSet from generated context
+```
+### 6. Merge DbContext
+- Copy DbSet from generated context
+- Paste into ApplicationDbContext
+- Delete extra DbContext
 
-Paste into ApplicationDbContext
+### 7. Scaffold CRUD
+- Generate Controller + Views for:
+- Product
+- Category
 
-Delete extra DbContext
+### 8. TEST SYSTEM
+- Add data
+- Edit data
+- Delete data
+- Show FK dropdown working
 
-7. Scaffold CRUD
-Generate Controller + Views for:
+## ⭐ ADD ONE FEATURE (REQUIRED)
+### Choose ONLY ONE (simple):
 
-Product
+- Auto-assign role on register
+- Add new field in user (e.g., FullName)
+- Add search bar in Product list
+- Restrict Product page to Admin only
+- Add simple validation (required fields)
 
-Category
+## 🎥 VIDEO REQUIREMENTS (3–5 MINUTES)
+### Your video must show:
+- Login/Register working
+- Database tables (SSMS)
+- CRUD working (Product or your table)
+- Foreign key dropdown working
+- The extra feature you added
 
-8. TEST SYSTEM
-Add data
+## 🗣️ EXPLAIN IN VIDEO
+- What tables you created
+- What relationship (FK) you used
+- What feature you added
 
-Edit data
-
-Delete data
-
-Show FK dropdown working
-
-⭐ ADD ONE FEATURE (REQUIRED)
-Choose ONLY ONE (simple):
-
-Auto-assign role on register
-
-Add new field in user (e.g., FullName)
-
-Add search bar in Product list
-
-Restrict Product page to Admin only
-
-Add simple validation (required fields)
-
-🎥 VIDEO REQUIREMENTS (3–5 MINUTES)
-Your video must show:
-
-Login/Register working
-
-Database tables (SSMS)
-
-CRUD working (Product or your table)
-
-Foreign key dropdown working
-
-The extra feature you added
-
-🗣️ EXPLAIN IN VIDEO
-What tables you created
-
-What relationship (FK) you used
-
-What feature you added
-
-📦 SUBMISSION
+## 📦 SUBMISSION
 Video (3–5 minutes)
 
-⚠️ REMINDERS
-Make sure CRUD works before recording
+## ⚠️ REMINDERS
+- Make sure CRUD works before recording
+- Keep demo simple and clear
 
-Keep demo simple and clear
-
-🎯 GOAL
+## 🎯 GOAL
 “Recreate the demo, then improve it with one feature.”
