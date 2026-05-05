@@ -1,0 +1,50 @@
+# Visual Studio / Rider / VSCode
+.vs/
+.idea/
+.vscode/
+
+# Build outputs
+bin/
+obj/
+Debug/
+Release/
+publish/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Database files
+*.mdf
+*.ldf
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Tailwind / frontend build outputs
+wwwroot/css/output.css
+wwwroot/js/githubRepoViewer.js
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Environment files
+.env
+.env.*
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Git itself
+.gitignore
+
